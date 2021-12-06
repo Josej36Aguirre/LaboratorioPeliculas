@@ -3,7 +3,9 @@ package mx.com.gm.peliculas.datos.negocio;
 
 
 public interface ICatalogoPeliculas {
-    public void agregraPelicula(String nombrePelicula, String nombreArchivo);
-    public void listarPeliculas(String nombreArchivo, String buscar);
-    public void inicarArchivo(String nombbreArchivo);
+    String NOMBRE_RECURSO = "peliculas.txt";
+    public void agregraPelicula(String nombrePelicula);
+    public void listarPeliculas();
+    public void buscarPeliculas(String nombrePelicula);
+    public void inicarArchivo();
 }
